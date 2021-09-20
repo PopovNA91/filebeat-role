@@ -1,0 +1,6 @@
+---
+- name: "Set filebeat systemwork"
+  become: true
+  command:
+    cmd: filebeat modules enable system
+    chdir: /usr/share/filebeat/bin
